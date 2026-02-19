@@ -1,6 +1,6 @@
 
 <h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=34&duration=2600&pause=800&color=F7B801&center=true&vCenter=true&width=750&lines=%3CJayraj+Kamliya%2F%3E;Software+Developer;DSA+%7C+Backend+Developer;Always+Learning+%F0%9F%9A%80" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2500&pause=800&color=00FF00&center=true&vCenter=true&width=700&lines=>>+Jayraj+Kamliya;>>+Software+Developer;>>+DSA+%7C+Java+%7C+Backend;>>+Building+Real+World+Solutions" />
 </h1>
 
 ---
