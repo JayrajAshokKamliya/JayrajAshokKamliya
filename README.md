@@ -1,5 +1,5 @@
 # 💫 About Me:
-Hi, I'm Jayraj Kamliya 👋<br>A Computer Engineering student passionate about building real-world software solutions.<br>💻 Expanding my stack — from core programming to modern web development.<br>📊 Learning Data Structures & Algorithms (DSA)<br>🛠️ Building projects <br>🚀 Interested in Backend Development & Quantitative Analysis<br>📚 Always learning, always improving
+Hi, I'm Jayraj Kamliya 👋<br>A Computer Engineering student passionate about building real-world software solutions.<br>💻 Expanding my stack — from core programming to modern web development.<br>📊 Learning Data Structures & Algorithms (DSA)<br>🛠️ Problem Solving <br>🚀 Interested in Backend Development & Quantitative Analysis<br>📚 Always learning, always improving
 
 
 ## 🌐 Socials:
@@ -7,10 +7,32 @@ Hi, I'm Jayraj Kamliya 👋<br>A Computer Engineering student passionate about b
 
 # 💻 Tech Stack:
 ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) ![Electron.js](https://img.shields.io/badge/Electron-191970?style=for-the-badge&logo=Electron&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white) ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=JayrajAshokKamliya&theme=dark&hide_border=true&include_all_commits=false&count_private=false)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=JayrajAshokKamliya&theme=dark&hide_border=true)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=JayrajAshokKamliya&theme=dark&hide_border=true&include_all_commits=false&count_private=false&layout=compact)
+# 📊 LeetCode Stats:
+
+<p align="center">
+  <img src="https://leetcard.jacoblin.cool/jk999?theme=dark&hide_border=true&ext=heatmap" />
+</p>
+
+<br/>
+
+<p align="center">
+  <img src="https://leetcode-streak-stats.vercel.app/?user=YOUR_LEETCODE_USERNAME&theme=dark&hide_border=true" />
+</p>
+
+<br/>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JayrajAshokKamliya&theme=dark&hide_border=true&layout=compact" />
+</p>
+
+---
+
+## 🧠 DSA Focus
+
+- 💻 Solving problems in **Java**
+- 🔥 Practicing Data Structures & Algorithms
+
+
 
 ---
 [![](https://visitcount.itsvg.in/api?id=JayrajAshokKamliya&icon=0&color=0)](https://visitcount.itsvg.in)
