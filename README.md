@@ -1,6 +1,9 @@
 
 <h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&duration=3000&pause=1000&color=00F7FF&center=true&vCenter=true&width=700&lines=Hi+👋,+I'm+Jayraj+Kamliya;Java+Developer;DSA+Enthusiast;Future+Quant+En
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=35&duration=3000&pause=1000&color=00F7FF&center=true&vCenter=true&width=700&lines=Jayraj+Kamliya;Software+Developer" />
+</h1>
+
+---
 
 # 💫 About Me:
 Hi, I'm Jayraj Kamliya 👋<br>A Computer Engineering student passionate about building real-world software solutions.<br>💻 Expanding my stack — from core programming to modern web development.<br>📊 Learning Data Structures & Algorithms (DSA)<br>🛠️ Problem Solving <br>🚀 Interested in Backend Development & Quantitative Analysis<br>📚 Always learning, always improving
