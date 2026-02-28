@@ -34,6 +34,31 @@ Hi, I'm Jayraj Kamliya 👋<br>A Computer Engineering student passionate about b
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JayrajAshokKamliya&theme=dark&hide_border=true&layout=compact" />
 </p>
 -->
+# 📊 GitHub Stats:
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=JayrajAshokKamliya&show_icons=true&theme=dark&hide_border=true" />
+</p>
+
+<br/>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=JayrajAshokKamliya&theme=dark&hide_border=true" />
+</p>
+
+<br/>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=JayrajAshokKamliya&theme=dark&hide_border=true&layout=compact" />
+</p>
+
+<br/>
+
+# 🐍 Contribution Snake
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/JayrajAshokKamliya/JayrajAshokKamliya/output/github-contribution-grid-snake-dark.svg" />
+</p>
 
 ## 🧠 DSA Focus
 
