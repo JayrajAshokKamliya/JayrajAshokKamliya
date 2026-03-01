@@ -19,7 +19,7 @@ Hi, I'm Jayraj Kamliya 👋<br>A Computer Engineering student passionate about b
 # 📊 LeetCode Stats:
 
 <p align="center">
-  <img src="https://leetcard.jacoblin.cool/jk999?theme=dark&hide_border=true&ext=heatmap" />
+  <img src="https://leetcard.jacoblin.cool/?theme=dark&hide_border=true&ext=heatmap" />
 </p>
 
 <br/>
