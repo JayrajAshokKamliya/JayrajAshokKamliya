@@ -71,7 +71,7 @@ Hi, I'm Jayraj Kamliya 👋<br>A Computer Engineering student passionate about b
 [![](https://visitcount.itsvg.in/api?id=JayrajAshokKamliya&icon=0&color=0)](https://visitcount.itsvg.in)
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
-
+<!--
 Practical 1 — Git basics
 bashmkdir gitdemo
 cd gitdemo
