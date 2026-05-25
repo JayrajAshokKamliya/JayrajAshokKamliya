@@ -120,7 +120,7 @@ git merge feature
 git log --oneline
 
 git branch
-Practical 4 — Pull Request and Merge Conflict
+4 — Pull Request and Merge Conflict
 git clone https://github.com/yourusername/repo.git
 
 cd repo
@@ -160,7 +160,7 @@ git add README.md
 git commit -m "Resolve merge conflict"
 
 git log --oneline
-Practical 5 — GitHub Actions Workflow
+ 5 — GitHub Actions Workflow
 mkdir practice5
 cd practice5
 
@@ -194,3 +194,189 @@ jobs:
         run: echo "Hello from GitHub Actions!"
 git add .
 git commit -m "Add workflow"
+
+
+6 — CI/CD Workflow for Static HTML
+
+```bash id="p6a"
+mkdir cicdemo
+cd cicdemo
+git init
+```
+
+```bash id="p6b"
+cat > index.html << 'EOF'
+<!DOCTYPE html>
+<html>
+<head><title>My CI/CD App</title></head>
+<body><h1>Deployed via GitHub Actions CI/CD!</h1></body>
+</html>
+EOF
+```
+
+```bash id="p6c"
+mkdir -p .github/workflows
+```
+
+```bash id="p6d"
+cat > .github/workflows/deploy.yml << 'EOF'
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Build step
+        run: echo "Building the project..."
+
+      - name: Test step
+        run: echo "Running tests... All passed!"
+
+      - name: Deploy step
+        run: echo "Deploying index.html to server... Done!"
+EOF
+```
+
+```bash id="p6e"
+git remote add origin https://github.com/yourusername/cicdemo.git
+git branch -M main
+git add .
+git commit -m "Add HTML and CI/CD workflow"
+git push -u origin main
+```
+
+---
+
+7 — Automated Testing with GitHub Actions
+
+```bash id="p7a"
+mkdir testdemo
+cd testdemo
+git init
+```
+
+```bash id="p7b"
+cat > test_sample.py << 'EOF'
+def add(a, b):
+    return a + b
+
+def test_add():
+    assert add(2, 3) == 5
+    assert add(0, 0) == 0
+    assert add(-1, 1) == 0
+
+def test_string():
+    assert "hello".upper() == "HELLO"
+EOF
+```
+
+```bash id="p7c"
+mkdir -p .github/workflows
+```
+
+```bash id="p7d"
+cat > .github/workflows/test.yml << 'EOF'
+name: Automated Testing
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install pytest
+        run: pip install pytest
+
+      - name: Run tests
+        run: pytest test_sample.py -v
+EOF
+```
+
+```bash id="p7e"
+git remote add origin https://github.com/yourusername/testdemo.git
+git branch -M main
+git add .
+git commit -m "Add test file and testing workflow"
+git push -u origin main
+```
+
+---
+
+8 — Dockerize Python Flask App
+
+```bash id="p8a"
+mkdir dockerdemo
+cd dockerdemo
+git init
+```
+
+```bash id="p8b"
+cat > app.py << 'EOF'
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "Hello from Docker!"
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
+EOF
+```
+
+```bash id="p8c"
+cat > requirements.txt << 'EOF'
+flask
+EOF
+```
+
+```bash id="p8d"
+cat > Dockerfile << 'EOF'
+FROM python:3.9
+
+WORKDIR /app
+
+COPY requirements.txt .
+
+RUN pip install -r requirements.txt
+
+COPY . .
+
+CMD ["python", "app.py"]
+EOF
+```
+
+```bash id="p8e"
+docker build -t flaskapp .
+```
+
+```bash id="p8f"
+docker run -p 5000:5000 flaskapp
+```
+
+```bash id="p8g"
+git add .
+git commit -m "Add Dockerized Flask app"
+```
+
+
