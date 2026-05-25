@@ -71,3 +71,126 @@ Hi, I'm Jayraj Kamliya 👋<br>A Computer Engineering student passionate about b
 [![](https://visitcount.itsvg.in/api?id=JayrajAshokKamliya&icon=0&color=0)](https://visitcount.itsvg.in)
 
 
+<!--
+Practical 1 — Basic Git Workflow
+mkdir gitdemo
+cd gitdemo
+git init
+echo "Hello World" > hello.txt
+git status
+git add hello.txt
+git status
+git commit -m "Initial commit"
+git log --oneline
+echo "Second line" >> hello.txt
+git diff
+git add .
+git commit -m "Update hello.txt"
+git log --oneline
+Practical 2 — GitHub Repository Push
+mkdir githubdemo
+cd githubdemo
+git init
+echo "My GitHub project" > readme.txt
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/yourusername/githubdemo.git
+git branch -M main
+git push -u origin main
+Practical 3 — Branching and Merging
+mkdir branchdemo
+cd branchdemo
+git init
+echo "Main content" > main.txt
+git add .
+git commit -m "Initial commit"
+
+git branch feature
+git checkout feature
+
+echo "Feature work" >> main.txt
+
+git add .
+git commit -m "Feature commit"
+
+git checkout master
+
+git merge feature
+
+git log --oneline
+
+git branch
+Practical 4 — Pull Request and Merge Conflict
+git clone https://github.com/yourusername/repo.git
+
+cd repo
+
+git checkout -b feature-branch
+
+echo "Feature line" >> README.md
+
+git add .
+git commit -m "Add feature line"
+
+git push origin feature-branch
+git checkout main
+
+echo "Line from main" >> README.md
+
+git add .
+git commit -m "Main edit"
+
+git checkout feature-branch
+
+echo "Line from feature" >> README.md
+
+git add .
+git commit -m "Feature edit"
+
+git checkout main
+
+git merge feature-branch
+
+cat README.md
+
+nano README.md
+
+git add README.md
+
+git commit -m "Resolve merge conflict"
+
+git log --oneline
+Practical 5 — GitHub Actions Workflow
+mkdir practice5
+cd practice5
+
+git init
+
+echo "Hello GitHub Actions" > hello.txt
+
+git add .
+git commit -m "Initial commit"
+
+git remote add origin https://github.com/yourusername/practice5.git
+
+git branch -M main
+
+git push -u origin main
+mkdir -p .github/workflows
+nano .github/workflows/main.yml
+name: Hello Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  hello-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Message
+        run: echo "Hello from GitHub Actions!"
+git add .
+git commit -m "Add workflow"
