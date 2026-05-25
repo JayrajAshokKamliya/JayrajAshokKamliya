@@ -320,16 +320,18 @@ git push -u origin main
 ```
 
 ---
+88888888888
+```bash
+cd ~/Desktop
 
-8 — Dockerize Python Flask App
-
-```bash id="p8a"
 mkdir dockerdemo
-cd dockerdemo
-git init
-```
 
-```bash id="p8b"
+cd dockerdemo
+
+docker --version
+
+docker ps
+
 cat > app.py << 'EOF'
 from flask import Flask
 
@@ -337,22 +339,16 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return "Hello from Docker!"
+    return "<h1>Hello from Docker!</h1>"
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
 EOF
-```
 
-```bash id="p8c"
-cat > requirements.txt << 'EOF'
-flask
-EOF
-```
+echo "flask" > requirements.txt
 
-```bash id="p8d"
 cat > Dockerfile << 'EOF'
-FROM python:3.9
+FROM python:3.9-slim
 
 WORKDIR /app
 
@@ -362,21 +358,152 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
+EXPOSE 5000
+
 CMD ["python", "app.py"]
 EOF
+
+ls
+
+docker build -t myflaskapp .
+
+docker images
+
+docker run -d -p 5000:5000 myflaskapp
+
+docker ps
 ```
 
-```bash id="p8e"
-docker build -t flaskapp .
+Open browser:
+
+```text
+http://localhost:5000
 ```
 
-```bash id="p8f"
-docker run -p 5000:5000 flaskapp
+Then stop container:
+
+```bash
+docker stop $(docker ps -q)
 ```
 
-```bash id="p8g"
-git add .
-git commit -m "Add Dockerized Flask app"
+
+9999999
+
+```bash id="p9all"
+cd ~/Desktop
+
+mkdir composedemo
+
+cd composedemo
+
+docker --version
+
+docker compose version
+
+cat > docker-compose.yml << 'EOF'
+version: '3'
+
+services:
+  web:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: mydb
+    ports:
+      - "3306:3306"
+EOF
+
+cat docker-compose.yml
+
+docker compose up -d
+
+docker compose ps
+
+docker ps
 ```
 
+Open browser:
+
+```text id="p9browser"
+http://localhost:8080
+```
+
+Then run:
+
+```bash id="p9logs"
+docker compose logs web
+
+docker compose logs db
+```
+
+Stop containers:
+
+```bash id="p9stop"
+docker compose down
+
+docker ps
+```
+
+101010101010101
+
+cd ~/Desktop
+
+mkdir ansibledemo
+
+cd ansibledemo
+
+ansible --version
+
+cat > inventory.ini << 'EOF'
+[webservers]
+localhost ansible_connection=local
+EOF
+
+cat > install_nginx.yml << 'EOF'
+---
+- name: Install and start Nginx web server
+  hosts: webservers
+  become: yes
+
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install Nginx
+      apt:
+        name: nginx
+        state: present
+
+    - name: Start Nginx service
+      service:
+        name: nginx
+        state: started
+        enabled: yes
+
+    - name: Verify Nginx is running
+      command: systemctl status nginx
+      register: nginx_status
+
+    - name: Print status
+      debug:
+        msg: "Nginx is running successfully!"
+EOF
+
+cat inventory.ini
+
+cat install_nginx.yml
+
+ansible-playbook -i inventory.ini install_nginx.yml
+
+curl http://localhost
+
+ansible-playbook -i inventory.ini install_nginx.yml
 
