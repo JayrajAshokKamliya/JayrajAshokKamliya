@@ -25,7 +25,7 @@ Hi, I'm Jayraj Kamliya 👋<br>A Computer Engineering student passionate about b
 <br/>
 
 <p align="center">
-  <img src="https://leetcode-streak-stats.vercel.app/?user=YOUR_LEETCODE_USERNAME&theme=dark&hide_border=true" />
+  <img src="https://leetcode-streak-stats.vercel.app/?user=jk999&theme=dark&hide_border=true" />
 </p>
 
 <br/>
